@@ -165,6 +165,181 @@
         </div>
       </div>
       <!--ADD ON---------------------------------------------------------------------------------->
+      <div class="stepAddOn" id="stepAddOn">
+        <h1>Pick add-ons</h1>
+        <p class="descrition">
+          Add-ons help enhance your gaming experience.
+        </p>
+        <!--bouton mois ------------------------------------------------------------------->
+        <div id="addonMois">
+          <div class="addOnButton">
+            <div class="regroup">
+              <input
+                type="checkbox"
+                id="onlineMois"
+                name="adOnn"
+                value="1"
+              />
+
+              <div class="addOn">
+                <p class="AddSize">Online service</p>
+                <span>Access to multiplayer games</span>
+              </div>
+            </div>
+            <p class="prix">+$1/mo</p>
+          </div>
+
+          <div class="addOnButton">
+            <div class="regroup">
+              <input
+                type="checkbox"
+                name="adOnn"
+                value="2"
+                id="storageMois"
+              />
+              <div class="addOn">
+                <p class="AddSize">Larger storage</p>
+                <span> 1TB of cloud save</span>
+              </div>
+            </div>
+            <p class="prix">+$2/mo</p>
+          </div>
+
+          <div class="addOnButton">
+            <div class="regroup">
+              <input
+                type="checkbox"
+                name="adOnn"
+                value="2"
+                id="customizableMois"
+              />
+              <div class="addOn">
+                <p class="AddSize">Customizable profile</p>
+                <span>Custom theme on your profile</span>
+              </div>
+            </div>
+            <p class="prix">+$2/mo</p>
+          </div>
+        </div>
+        <!--bouton année -------------------------------------------------------------------->
+        <div id="addonAnnee">
+          <div class="addOnButton">
+            <div class="regroup">
+              <input
+                type="checkbox"
+                name="adOnn"
+                value="10"
+                id="onlineAnnee"
+              />
+
+              <div class="addOn">
+                <p class="AddSize">Online service</p>
+                <span>Access to multiplayer games</span>
+              </div>
+            </div>
+            <p class="prix">+$10/yr</p>
+          </div>
+
+          <div class="addOnButton">
+            <div class="regroup">
+              <input
+                type="checkbox"
+                name="adOnn"
+                value="20"
+                id="storageAnnee"
+              />
+              <div class="addOn">
+                <p class="AddSize">Larger storage</p>
+                <span> 1TB of cloud save</span>
+              </div>
+            </div>
+            <p class="prix">+$20/yr</p>
+          </div>
+
+          <div class="addOnButton">
+            <div class="regroup">
+              <input
+                type="checkbox"
+                name="adOnn"
+                value="20"
+                id="customizableAnnee"
+              />
+              <div class="addOn">
+                <p class="AddSize">Customizable profile</p>
+                <span>Custom theme on your profile</span>
+              </div>
+            </div>
+            <p class="prix">+$20/yr</p>
+          </div>
+        </div>
+
+        <div class="buttonContainerStepThree">
+          <button onclick="backSteptTwo()" class="goBack">Go back</button>
+
+          <button onclick="goStepFour()" class="nextStep">Next Step</button>
+        </div>
+      </div>
+      <!--RESUME---------------------------------------------------------------------------------->
+      <div class="stepSummary" id="stepSummary">
+        <h1>Finishing up</h1>
+        <p class="descrition">
+          Double-check everything looks OK before confirming.
+        </p>
+        <div class="resume">
+          <div class="containerResume">
+            <div
+              id="resumeMonth"
+              <!--remuseMois-------------------------------------------------------
+            >
+              <div class="flexResume">
+                <div>
+                  <h4 id="modeResume">Choose a plan</h4>
+                  <button onclick="goFromFourToTwo()">Change</button>
+                </div>
+                <label for="" id="priceResume"></label>
+              </div>
+              <br />
+              <span></span>
+              <div class="flexResume">
+                <p>Online service</p>
+                <label for="" id="onlinePrice">+0$</label>
+              </div>
+              <div class="flexResume">
+                <p>Larger storage</p>
+                <label for="" id="storagePrice">+0$</label>
+              </div>
+              <div class="flexResume">
+                <p>Customizable profile</p>
+                <label for="" id="customizablePrice">+0$</label>
+              </div>
+            </div>
+          </div>
+          <div class="flexTotal">
+            <p id="modeTotal">Total</p>
+            <span id="totalPrice"></span>
+            <span class="dollar">$</span>
+          </div>
+          <div class="buttonContainerStepFour">
+            <button onclick="backStepThree()" class="goBack">
+              Go back
+            </button>
+            <button onclick="goToStepThankYou()" class="nextStep">
+              Confirm
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--THANK YOU------------------------------------------------------------------------------>
+      <div class="stepThankYou" id="stepThankYou">
+        <img src="./image/icon-thank-you.svg" alt="" />
+        <h1>Thank you!</h1>
+        <p>
+          Thanks for confirming your subscription! We hope you have fun
+          using our platform. If you ever need support, please feel free to
+          email us at support@loremgaming.com.
+        </p>
+      </div>
+      </div>
     </div>
   </div>
 </body>
