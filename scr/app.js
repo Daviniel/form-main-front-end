@@ -14,7 +14,7 @@ function backStepOne() {
     circle2.style.color = "white";
 }
 
-/* check des inputs INFOS */
+/* check dos inputs INFOS */
 
 function checkName() {
     let myNameInput = document.getElementById("infoName");
