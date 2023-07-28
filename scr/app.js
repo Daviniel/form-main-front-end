@@ -24,6 +24,56 @@ function goStepThree() {
   }
   checkPlan();
 }
+
+function backSteptTwo() {
+  stepPlan.style.display = "flex";
+  stepAddOn.style.display = "none";
+  circle2.style.color = "black";
+  circle2.style.backgroundColor = "rgba(255, 255, 255)";
+  circle3.style.backgroundColor = "rgb(255, 255, 255, 0)";
+  circle3.style.color = "white";
+}
+
+function goStepFour() {
+  stepSummary.style.display = "flex";
+  stepAddOn.style.display = "none";
+  circle3.style.color = "white";
+  circle3.style.backgroundColor = "rgba(255, 255, 255, 0)";
+  circle4.style.backgroundColor = "rgb(255, 255, 255)";
+  circle4.style.color = "black";
+
+  const adOnnPrice = document.getElementsByName("adOnn").forEach(radio => {
+    if (radio.checked) {
+      console.log(radio.value);
+      console.log(document.getElementById("totalPrice").innerHTML);
+      const planPrice = document.getElementById("totalPrice").innerHTML;
+      console.log(planPrice);
+      document.getElementById("totalPrice").innerHTML =
+        parseInt(planPrice) + parseInt(radio.value);
+    }
+  });
+}
+
+function backStepThree() {
+  stepSummary.style.display = "none";
+  stepAddOn.style.display = "flex";
+  circle3.style.color = "black";
+  circle3.style.backgroundColor = "rgba(255, 255, 255)";
+  circle4.style.backgroundColor = "rgb(255, 255, 255, 0)";
+  circle4.style.color = "white";
+
+  const adOnnPrice = document.getElementsByName("adOnn").forEach(radio => {
+    if (radio.checked) {
+      console.log(radio.value);
+      console.log(document.getElementById("totalPrice").innerHTML);
+      const planPrice = document.getElementById("totalPrice").innerHTML;
+      console.log(planPrice);
+      document.getElementById("totalPrice").innerHTML =
+        parseInt(planPrice) - parseInt(radio.value);
+    }
+  });
+}
+
 /* check dos inputs INFOS */
 
 function checkName() {
