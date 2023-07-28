@@ -14,6 +14,16 @@ function backStepOne() {
   circle2.style.color = "white";
 }
 
+function goStepThree() {
+  console.log(typeof document.getElementById("totalPrice").innerHTML);
+
+  if (document.getElementById("totalPrice").innerHTML == "") {
+    console.log(document.getElementById("totalPrice").innerHTML);
+    document.getElementById("totalPrice").innerHTML = "0";
+    console.log(document.getElementById("totalPrice").innerHTML);
+  }
+  checkPlan();
+}
 /* check dos inputs INFOS */
 
 function checkName() {
